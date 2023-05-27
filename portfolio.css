@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  background: var(--dark-color);
+  position: relative;
+}
+
+img{border-radius: 5px;}
+
+.light {
+  background: var(--light-color);
+}
+
+.tab .btn:hover {
+  background: var(--light-color);
+}
+
+#Moon {
+  display: none;
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+.mode button {
+  position: absolute;
+  position: fixed;
+  bottom: 25%;
+  left: 95%;
+  position: fixed;
+  z-index: 99;
+  display: inline-block;
+  background: var(--light-color);
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+}
+
+#defaultOpn {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#thirdOpn {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.porfolioSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: -10px;
+}
+
+.defaultBtn {
+  position: relative;
+}
+.secondBtn {
+  position: relative;
+}
+.thirdBtn {
+  position: relative;
+}
+
+.tablinks.selected::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid var(--light-color);
+  margin-top: 16px;
+}

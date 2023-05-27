@@ -1,0 +1,94 @@
+@media screen and (max-width: 1024px) {
+    .container{
+        width: var(--container-width-md);
+    }
+
+    #close-menu-button{display: none;}
+
+    nav button{
+        display: inline-block;
+        background: transparent;
+        font-size: 1.5rem;
+        color: var(--fourthCl);
+        cursor: pointer;
+        border: none;
+        color: var(--light-color);
+    }
+
+    #navMenu{
+        position: fixed;
+        flex-direction: column;
+        top: 4rem;
+        right: 5%;
+        height: 20rem;
+        width: 19rem;
+        transition: var(--transition);
+        background: var(--dark-color);
+        box-shadow: 0px 2px 5px #11111198;
+        display: none;
+        padding: 25px;
+    }
+
+    #navMenu li{
+        /* background: red; */
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+
+   
+}
+
+@media screen and (max-width: 749px) {
+
+    .aboutInfo{
+        margin-top: 3rem;
+        width: fit-content;
+    }
+
+    .aboutInfo p{
+        max-width: 34rem;
+    }
+    .aboutContainer{
+        place-items: center;
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media screen and (max-width: 800px ) {
+    .portfolioBtn{
+      left: initial;
+    }
+
+    nav {
+        width: 100%;
+        height: 4rem;
+    }
+
+    .navLogo img {
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .reviewesCont {
+      padding: 20px;
+      grid-template-columns: 1fr;
+      place-items: center;
+      /* text-align: center; */
+    }
+  
+    .reviewIn {
+      margin-top: 1rem;
+      text-align: center;
+      margin-left: 0rem;
+    }
+  
+    .reviewIn p {
+      font-size: 15px;
+    }
+  }
+
